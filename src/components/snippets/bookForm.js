@@ -126,7 +126,7 @@ const BookFormSnippet = () => {
   }, [distance, price])
     
   function disabled_slots(data){
-      data.length > 0 && data.map((booking_date)=>{
+      Array.isArray(data) && data.length > 0 && data.map((booking_date)=>{
       let [booking_start, booking_end] = [new Date(booking_date['start']), new Date(booking_date['end'])]
       booking_end.setMinutes(booking_end.getMinutes()+30);
       let [start_day, start_month, start_year] = [booking_start.getDate(), booking_start.getMonth()+1, booking_start.getFullYear()]
