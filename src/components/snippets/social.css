@@ -1,0 +1,88 @@
+.social-snippet .ant-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    background: #fff;
+    color: #100e17;
+    position: relative;
+    z-index: 1;
+
+    padding: 3rem 0 4rem;
+}
+
+.social-snippet .ant-row:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+.social-snippet .ant-row:before {
+    background: inherit;
+    top: -20%;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+.social-snippet h1 {
+    margin: 0 2rem;
+    font-size: 4rem;
+}
+
+.social-snippet .premium-button {
+    background-image: -webkit-linear-gradient(30deg, #0a0a0a 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #0a0a0a 50%, transparent 50%);
+    border: none;
+    color: #fafafa;
+
+    background-color: #7b203d;
+    margin: 1rem 2rem;
+    width: 200px;
+
+    -webkit-transition: color .6s ease;
+    -moz-transition: color .6s ease;
+    -ms-transition: color .6s ease;
+    -o-transition: color .6s ease;
+    transition: color .6s ease;
+}
+
+.social-snippet .premium-button:hover {
+    color: #31e1eb;
+}
+
+.social-snippet .buttons-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+/*Responsive Code*/
+@media screen and (max-width: 992px) {
+
+    .social-snippet .ant-row {
+        padding: 2rem 0 3.5rem;
+    }
+
+    .social-snippet .ant-row:before {
+        top: -5%;
+    }
+}

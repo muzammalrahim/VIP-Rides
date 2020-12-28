@@ -1,0 +1,83 @@
+.location-snippet .ant-row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+
+    background: #100e17;
+    color: #fafafa;
+    position: relative;
+    z-index: 0;
+    padding: 0;
+}
+
+.location-snippet .snippet-content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    padding: 0!important;
+}
+
+.location-snippet .snippet-wrapper {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+
+    text-align: right;
+    max-width: 500px;
+    padding: 6rem 5rem 6rem;
+    float: right;
+}
+
+.location-snippet .snippet-wrapper p:nth-child(4) {
+    margin-top: 1rem;
+    color: #5b5d5a;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.location-snippet .snippet-content .image-wrapper {
+    background: url("../../images/home/car2.jpeg") center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.location-snippet .premium-button {
+    background-color: #0a0a0a;
+    border: 2px solid #0a0a0a;
+    margin: 1rem 0;
+    width: 200px;
+}
+
+.location-snippet .snippet-wrapper p:nth-child(5) {
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    font-style: italic;
+}
+
+.location-snippet .location-area {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    font-style: italic;
+}
+
+/*Responsive Code*/
+@media screen and (max-width: 992px) {
+
+    .location-snippet .snippet-wrapper{
+        padding: 4rem 1rem 4rem .5rem;
+    }
+}

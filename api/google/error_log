@@ -1,0 +1,310 @@
+[17-Nov-2020 08:02:17 UTC] PHP Notice:  Undefined variable: calendarId in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 80
+[17-Nov-2020 08:02:17 UTC] PHP Fatal error:  Uncaught Google_Exception: (list) missing required param: 'calendarId' in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Service/Resource.php:165
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/vendor/google/apiclient-services/src/Google/Service/Calendar/Resource/Events.php(265): Google_Service_Resource->call('list', Array, 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php(80): Google_Service_Calendar_Resource_Events->listEvents(NULL, Array)
+#2 {main}
+  thrown in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Service/Resource.php on line 165
+[17-Nov-2020 08:02:39 UTC] PHP Notice:  Undefined variable: calendarId in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 80
+[17-Nov-2020 08:02:39 UTC] PHP Fatal error:  Uncaught Google_Exception: (list) missing required param: 'calendarId' in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Service/Resource.php:165
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/vendor/google/apiclient-services/src/Google/Service/Calendar/Resource/Events.php(265): Google_Service_Resource->call('list', Array, 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php(80): Google_Service_Calendar_Resource_Events->listEvents(NULL, Array)
+#2 {main}
+  thrown in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Service/Resource.php on line 165
+[17-Nov-2020 19:18:32 Australia/Adelaide] PHP Warning:  array_column(): The column key should be either a string or an integer in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 110
+[17-Nov-2020 19:18:32 Australia/Adelaide] PHP Warning:  array_count_values() expects parameter 1 to be array, boolean given in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 110
+[17-Nov-2020 19:35:41 Australia/Adelaide] PHP Notice:  Undefined variable: uid in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 107
+[17-Nov-2020 19:35:41 Australia/Adelaide] PHP Warning:  array_count_values() expects parameter 1 to be array, null given in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 107
+[17-Nov-2020 19:35:41 Australia/Adelaide] PHP Notice:  Array to string conversion in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 110
+[17-Nov-2020 19:35:41 Australia/Adelaide] PHP Notice:  Undefined variable: Array in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 110
+[17-Nov-2020 19:35:41 Australia/Adelaide] PHP Warning:  Invalid argument supplied for foreach() in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 110
+[17-Nov-2020 21:39:47 Australia/Adelaide] PHP Fatal error:  Uncaught Google_Service_Exception: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "badRequest",
+    "message": "Bad Request"
+   }
+  ],
+  "code": 400,
+  "message": "Bad Request"
+ }
+}
+ in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Task/Runner.php(176): Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#3 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Client.php(842): Google_Http_REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...', Array, NULL)
+#4 /home/rvv0wq53cchl/dev.viprides/api/go in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php on line 118
+[17-Nov-2020 21:41:29 Australia/Adelaide] PHP Fatal error:  Uncaught Google_Service_Exception: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "badRequest",
+    "message": "Bad Request"
+   }
+  ],
+  "code": 400,
+  "message": "Bad Request"
+ }
+}
+ in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Task/Runner.php(176): Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#3 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Client.php(842): Google_Http_REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...', Array, NULL)
+#4 /home/rvv0wq53cchl/dev.viprides/api/go in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php on line 118
+[17-Nov-2020 21:42:22 Australia/Adelaide] PHP Fatal error:  Uncaught Google_Service_Exception: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "badRequest",
+    "message": "Bad Request"
+   }
+  ],
+  "code": 400,
+  "message": "Bad Request"
+ }
+}
+ in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Task/Runner.php(176): Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#3 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Client.php(842): Google_Http_REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...', Array, NULL)
+#4 /home/rvv0wq53cchl/dev.viprides/api/go in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php on line 118
+[17-Nov-2020 11:26:53 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 80
+[17-Nov-2020 11:30:02 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 80
+[17-Nov-2020 23:24:08 Australia/Adelaide] PHP Fatal error:  Uncaught Google_Service_Exception: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "badRequest",
+    "message": "Bad Request"
+   }
+  ],
+  "code": 400,
+  "message": "Bad Request"
+ }
+}
+ in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Task/Runner.php(176): Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#3 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Client.php(842): Google_Http_REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...', Array, NULL)
+#4 /home/rvv0wq53cchl/dev.viprides/api/go in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php on line 118
+[17-Nov-2020 23:24:29 Australia/Adelaide] PHP Fatal error:  Uncaught Google_Service_Exception: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "badRequest",
+    "message": "Bad Request"
+   }
+  ],
+  "code": 400,
+  "message": "Bad Request"
+ }
+}
+ in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Task/Runner.php(176): Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#3 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Client.php(842): Google_Http_REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...', Array, NULL)
+#4 /home/rvv0wq53cchl/dev.viprides/api/go in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php on line 118
+[17-Nov-2020 23:24:33 Australia/Adelaide] PHP Fatal error:  Uncaught Google_Service_Exception: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "badRequest",
+    "message": "Bad Request"
+   }
+  ],
+  "code": 400,
+  "message": "Bad Request"
+ }
+}
+ in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Task/Runner.php(176): Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#3 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Client.php(842): Google_Http_REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...', Array, NULL)
+#4 /home/rvv0wq53cchl/dev.viprides/api/go in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php on line 118
+[17-Nov-2020 23:25:07 Australia/Adelaide] PHP Fatal error:  Uncaught Google_Service_Exception: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "badRequest",
+    "message": "Bad Request"
+   }
+  ],
+  "code": 400,
+  "message": "Bad Request"
+ }
+}
+ in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Task/Runner.php(176): Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#3 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Client.php(842): Google_Http_REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...', Array, NULL)
+#4 /home/rvv0wq53cchl/dev.viprides/api/go in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php on line 118
+[17-Nov-2020 23:25:40 Australia/Adelaide] PHP Fatal error:  Uncaught Google_Service_Exception: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "badRequest",
+    "message": "Bad Request"
+   }
+  ],
+  "code": 400,
+  "message": "Bad Request"
+ }
+}
+ in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Task/Runner.php(176): Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#3 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Client.php(842): Google_Http_REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...', Array, NULL)
+#4 /home/rvv0wq53cchl/dev.viprides/api/go in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php on line 118
+[17-Nov-2020 23:26:08 Australia/Adelaide] PHP Fatal error:  Uncaught Google_Service_Exception: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "badRequest",
+    "message": "Bad Request"
+   }
+  ],
+  "code": 400,
+  "message": "Bad Request"
+ }
+}
+ in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Task/Runner.php(176): Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#3 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Client.php(842): Google_Http_REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...', Array, NULL)
+#4 /home/rvv0wq53cchl/dev.viprides/api/go in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php on line 118
+[17-Nov-2020 23:26:28 Australia/Adelaide] PHP Fatal error:  Uncaught Google_Service_Exception: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "badRequest",
+    "message": "Bad Request"
+   }
+  ],
+  "code": 400,
+  "message": "Bad Request"
+ }
+}
+ in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Task/Runner.php(176): Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#3 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Client.php(842): Google_Http_REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...', Array, NULL)
+#4 /home/rvv0wq53cchl/dev.viprides/api/go in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php on line 118
+[17-Nov-2020 23:26:51 Australia/Adelaide] PHP Fatal error:  Uncaught Google_Service_Exception: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "badRequest",
+    "message": "Bad Request"
+   }
+  ],
+  "code": 400,
+  "message": "Bad Request"
+ }
+}
+ in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Task/Runner.php(176): Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#3 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Client.php(842): Google_Http_REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...', Array, NULL)
+#4 /home/rvv0wq53cchl/dev.viprides/api/go in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php on line 118
+[17-Nov-2020 23:27:32 Australia/Adelaide] PHP Fatal error:  Uncaught Google_Service_Exception: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "badRequest",
+    "message": "Bad Request"
+   }
+  ],
+  "code": 400,
+  "message": "Bad Request"
+ }
+}
+ in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Task/Runner.php(176): Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#3 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Client.php(842): Google_Http_REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...', Array, NULL)
+#4 /home/rvv0wq53cchl/dev.viprides/api/go in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php on line 118
+[17-Nov-2020 23:33:04 Australia/Adelaide] PHP Fatal error:  Uncaught Google_Service_Exception: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "badRequest",
+    "message": "Bad Request"
+   }
+  ],
+  "code": 400,
+  "message": "Bad Request"
+ }
+}
+ in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Task/Runner.php(176): Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#3 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Client.php(842): Google_Http_REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...', Array, NULL)
+#4 /home/rvv0wq53cchl/dev.viprides/api/go in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php on line 118
+[17-Nov-2020 23:33:25 Australia/Adelaide] PHP Fatal error:  Uncaught Google_Service_Exception: {
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "badRequest",
+    "message": "Bad Request"
+   }
+  ],
+  "code": 400,
+  "message": "Bad Request"
+ }
+}
+ in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Task/Runner.php(176): Google_Http_REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#2 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php(58): Google_Task_Runner->run()
+#3 /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Client.php(842): Google_Http_REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...', Array, NULL)
+#4 /home/rvv0wq53cchl/dev.viprides/api/go in /home/rvv0wq53cchl/dev.viprides/api/google/src/Google/Http/REST.php on line 118
+[17-Nov-2020 13:05:20 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 144
+[17-Nov-2020 13:07:53 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 144
+[17-Nov-2020 13:10:27 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 145
+[17-Nov-2020 13:11:39 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 145
+[17-Nov-2020 13:12:06 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 139
+[18-Nov-2020 17:02:30 Australia/Adelaide] PHP Notice:  Array to string conversion in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 138
+[18-Nov-2020 17:02:39 Australia/Adelaide] PHP Notice:  Array to string conversion in /home/rvv0wq53cchl/dev.viprides/api/google/disable_dates.php on line 138

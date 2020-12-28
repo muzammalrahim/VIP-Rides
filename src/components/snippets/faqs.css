@@ -1,0 +1,84 @@
+.faqs-snippet .ant-row{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+
+    background: #080808;
+    color: #fafafa;
+    position: relative;
+    z-index: 1;
+
+    padding: 8rem 0 12rem;
+}
+
+.faqs-snippet .ant-row h1{
+    color: inherit;
+}
+
+.faqs-snippet .ant-row:after {
+    background: inherit;
+    bottom: 0%;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+.faqs-snippet .ant-row:before {
+    background: inherit;
+    top: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+.faqs-snippet .ant-collapse{
+    background: none;
+    color: #fafafa;
+    text-align: left;
+}
+
+.faqs-snippet .ant-collapse > .ant-collapse-item > .ant-collapse-header{
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 1.68;
+    letter-spacing: .2rem;
+}
+
+.faqs-snippet .ant-collapse-borderless > .ant-collapse-item {
+    border-bottom: 1px solid #fafafa;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header,  .ant-collapse-content{
+    color: inherit;
+    font-size: 1rem;
+}
+
+.faqs-snippet .anticon{
+    font-size: 4rem;
+}
+
+/*Responsive Code*/
+@media screen and (max-width: 992px) {
+
+    .faqs-snippet .ant-row{
+        padding: 4rem 0;
+    }
+}

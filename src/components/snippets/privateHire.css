@@ -1,0 +1,60 @@
+.private-hire-snippet .ant-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    background: #fff;
+    color: #100e17;
+    position: relative;
+    z-index: 1;
+    padding: 3rem 0;
+}
+
+.private-hire-snippet .ant-row:after {
+    background: inherit;
+    bottom: -20%;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+.private-hire-snippet .ant-row:before {
+    background: inherit;
+    top: -20%;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+.private-hire-snippet p:nth-child(2) {
+    margin-bottom: 1rem;
+    color: #5b5d5a;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.private-hire-snippet p:nth-child(3) {
+    letter-spacing: .25rem;
+}
+
+/*Responsive Code*/
+@media screen and (max-width: 768px) {
+    .private-hire-snippet .ant-row {
+        padding: 0;
+    }
+}

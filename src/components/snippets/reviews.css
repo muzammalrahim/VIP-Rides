@@ -1,0 +1,283 @@
+.reviews-snippet .ant-row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: #100e17;
+    color: #fff;
+
+    padding: 8rem 0 2rem;
+    position: relative;
+    z-index: 1;
+
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Likely future */
+}
+
+.reviews-snippet .carousel-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.reviews-snippet .ant-row:after {
+    background: inherit;
+    bottom: -10%;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+.reviews-snippet .ant-row:before {
+    background: inherit;
+    top: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+
+.reviews-snippet .carousel-container > .anticon {
+    margin: 1rem;
+    font-size: 2rem;
+    color: #fafafa;
+}
+
+.reviews-snippet .carousel-container .image-container {
+    width: 100%;
+}
+
+.reviews-snippet .carousel-container img {
+    margin: 0 auto;
+    margin-top: -50px;
+    width: 6rem;
+    border-radius: 100%;
+    box-shadow: 0px 1px 30px 0px #4000b7, 0px -1px 0px 4px rgba(86, 39, 151, 0.6);
+}
+
+.reviews-snippet .ant-carousel {
+    max-width: 600px;
+}
+
+.reviews-snippet .ant-carousel .slide {
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    text-align: left;
+    background-color: #17141d;
+    color: #fafafa;
+    border-radius: 10px;
+    height: 100%;
+    transition: 0.4s ease-out;
+
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.reviews-snippet .ant-carousel .slide:hover {
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.82);
+}
+
+.reviews-snippet .ant-carousel .slick-slide {
+    padding: 2rem 1rem;
+}
+
+.reviews-snippet .ant-carousel .slide-track {
+    display: flex !important;
+}
+
+.ant-carousel .slick-slider .slick-track, .ant-carousel .slick-slider .slick-list {
+    padding: 1rem 0;
+}
+
+.slick-slide {
+    height: inherit !important;
+}
+
+.reviews-snippet h1 {
+    font-size: 3.4rem;
+    letter-spacing: 1rem;
+    font-weight: bold;
+}
+
+.reviews-snippet .ant-carousel .slick-slide h2 {
+    color: #fff;
+    width: 100%;
+    padding: 0 2rem;
+    letter-spacing: .2rem;
+
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.reviews-snippet .ant-carousel .slick-slide p {
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+.reviews-snippet .ant-rate {
+    line-height: 0;
+    margin-bottom: 2rem;
+}
+
+
+/*Animation Effects*/
+
+.reviews-snippet .bar {
+    position: relative;
+    height: 2px;
+    width: 100%;
+}
+
+.reviews-snippet .emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+}
+
+.reviews-snippet .filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: linear-gradient(to right, #4000b7, #562797);
+    transition: 0.6s ease-out;
+}
+
+.reviews-snippet .ant-carousel:hover .filledbar {
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+/*Animation Code*/
+.reviews-snippet .lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 95%;
+    margin: auto;
+    width: 100%;
+}
+
+.reviews-snippet .line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 8%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.reviews-snippet .line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #31e1eb 75%, #31e1eb 100%);
+    animation: run 7s 0s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+.reviews-snippet .line:nth-child(1) {
+    margin-left: -25%
+}
+
+.reviews-snippet .line:nth-child(1)::after {
+    animation-delay: 2s
+}
+
+.reviews-snippet .line:nth-child(3) {
+    margin-left: 25%
+}
+
+.reviews-snippet .line:nth-child(3)::after {
+    animation-delay: 2.5s
+}
+
+@keyframes run {
+
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 110%;
+    }
+
+}
+
+/*Responsive Code*/
+@media screen and (max-width: 768px) {
+    .reviews-snippet .ant-carousel .slick-slide p {
+        font-size: 1rem;
+    }
+
+    .reviews-snippet .ant-carousel {
+        max-width: 90%;
+    }
+
+    .reviews-snippet .ant-carousel .slick-slide {
+        padding-left: 0;
+        padding-right: 0;
+        box-shadow: none;
+    }
+
+    .reviews-snippet .ant-carousel .slide{
+        box-shadow: none;
+    }
+
+    .reviews-snippet h1 {
+        font-size: 2.2rem;
+    }
+
+    .reviews-snippet .ant-row {
+        padding: 4rem 0 0;
+    }
+
+    .reviews-snippet .ant-row:after {
+        bottom: -3%;
+    }
+
+    .reviews-snippet .carousel-container > .anticon {
+        display: none;
+    }
+}

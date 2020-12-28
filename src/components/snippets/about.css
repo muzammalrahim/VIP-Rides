@@ -1,0 +1,131 @@
+.about-snippet .ant-row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+
+    background: #fff;
+
+    color: #100e17;
+    position: relative;
+    z-index: 0;
+    padding: 0;
+
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Likely future */
+}
+
+.about-snippet .snippet-content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    padding: 0;
+}
+
+.about-snippet h1 {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about-snippet p {
+    margin: 0;
+    width: 100%;
+}
+
+.about-snippet .checklist {
+    list-style-type: none;
+    max-width: 500px;
+    color: #383454;
+    letter-spacing: .1rem;
+    font-style: italic;
+}
+
+.about-snippet .checklist-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    padding: 10rem 0 8rem;
+    position: relative;
+}
+
+.about-snippet .checklist > div {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+.about-snippet .checklist > div .anticon {
+    font-size: 2rem;
+    margin: .5rem 1rem;
+
+}
+
+.about-snippet .snippet-content .image-wrapper {
+    background: url("../../images/home/car2.jpeg") center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+/*Animation Code*/
+
+
+.about-snippet .bar {
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    right: 0;
+    top: 0;
+}
+
+.about-snippet .emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+}
+
+.about-snippet .filledbar {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to right, #4000b7, #562797);
+    transition: 0.6s ease-out;
+}
+
+.about-snippet:hover .filledbar {
+    height: 100%;
+    transition: 0.4s ease-out;
+}
+
+/*Responsive Code*/
+@media screen and (max-width: 992px) {
+    .about-snippet .bar {
+        display: none;
+    }
+
+    .about-snippet .checklist-container{
+        padding: 4rem 0;
+    }
+}

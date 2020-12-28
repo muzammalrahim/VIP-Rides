@@ -1,0 +1,107 @@
+.services-overview-snippet .ant-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    background: #100e17;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+
+    padding: 2rem 0 6rem;
+}
+
+.services-overview-snippet .ant-row:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+.services-overview-snippet .ant-row:before {
+    background: inherit;
+    top: -3%;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+.services-overview-snippet .snippet-content > div:nth-child(1) {
+    /*border-right: 3px solid #31e1eb;*/
+}
+
+.services-overview-snippet .snippet-content > div {
+    padding: 2rem 2rem;
+}
+
+.services-overview-snippet p{
+    letter-spacing: .1rem;
+}
+
+    /*Animation Code*/
+
+.services-overview-snippet .lines {
+    position: absolute;
+    top: -9%;
+    left: 0;
+    right: 0;
+    height: 90%;
+    margin: auto;
+    width: 100%;
+}
+
+.services-overview-snippet .line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 8%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.services-overview-snippet .line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #31e1eb 75%, #31e1eb 100%);
+    animation: run 7s 0s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+.services-overview-snippet .line:nth-child(1) {
+    margin-left: -25%
+}
+
+.services-overview-snippet .line:nth-child(1)::after {
+    animation-delay: 2s
+}
+
+.services-overview-snippet .line:nth-child(3) {
+    margin-left: 25%
+}
+
+.services-overview-snippet .line:nth-child(3)::after {
+    animation-delay: 2.5s
+}

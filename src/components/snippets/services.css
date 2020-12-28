@@ -1,0 +1,240 @@
+.services-snippet .ant-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: #fff;
+
+    color: #100e17;
+
+    padding: 8rem 0 10rem;
+    position: relative;
+    z-index: 1;
+}
+
+.services-snippet .ant-row:after {
+    background: inherit;
+    bottom: -10%;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+.services-snippet .ant-row:before {
+    background: inherit;
+    top: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+.services-snippet h1 {
+    font-size: 3.4rem;
+    letter-spacing: 1rem;
+    font-weight: bold;
+}
+
+.services-snippet ul.services {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: .5rem;
+    line-height: 1.68;
+    letter-spacing: .1rem;
+    font-size: .9rem;
+}
+
+.services-snippet ul.services .service {
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    width: 20%;
+}
+
+.services-snippet ul.services .service span {
+    font-size: .8rem;
+}
+
+
+.services-snippet ul.services .icon {
+    font-size: 6.5rem;
+    /*background-color: #0575E6;*/
+    color: #100e17;
+    border: none;
+    margin: 1.5rem 0;
+    width: 125px;
+}
+
+.services-snippet h3 {
+    font-weight: bolder;
+}
+
+/*Animation Code*/
+
+.services-snippet .circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.services-snippet .circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to right, #2aa6b0, #31e1eb);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    border-radius: 100%;
+}
+
+.services-snippet .circles li:nth-child(1) {
+    left: 25%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+
+
+.services-snippet .circles li:nth-child(2) {
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.services-snippet .circles li:nth-child(3) {
+    left: 70%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 4s;
+}
+
+.services-snippet .circles li:nth-child(4) {
+    left: 40%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.services-snippet .circles li:nth-child(5) {
+    left: 65%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 0s;
+}
+
+.services-snippet .circles li:nth-child(6) {
+    left: 75%;
+    width: 55px;
+    height: 55px;
+    animation-delay: 3s;
+}
+
+.services-snippet .circles li:nth-child(7) {
+    left: 35%;
+    width: 75px;
+    height: 75px;
+    animation-delay: 7s;
+}
+
+.services-snippet .circles li:nth-child(8) {
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.services-snippet .circles li:nth-child(9) {
+    left: 20%;
+    width: 8px;
+    height: 8px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.services-snippet .circles li:nth-child(10) {
+    left: 85%;
+    width: 35px;
+    height: 35px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+    }
+
+}
+
+/*Responsive Code*/
+@media screen and (max-width: 768px) {
+    .services-snippet ul.services {
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .services-snippet h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0;
+    }
+
+    .lines {
+        display: none;
+    }
+
+    .services-snippet ul.services .service {
+        width: 200px;
+    }
+
+    .services-snippet .ant-row {
+        padding: 4rem 0;
+    }
+
+}
+

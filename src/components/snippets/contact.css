@@ -1,0 +1,42 @@
+.contact-snippet .ant-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: #fc6767;
+    color: #0a0a0a;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-snippet .ant-row:after {
+    background: inherit;
+    bottom: -50%;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+.contact-snippet .ant-row:before {
+    background: inherit;
+    top: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+

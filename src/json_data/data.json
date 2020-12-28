@@ -1,0 +1,84 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "make": "Audi",
+      "driver": "John",
+      "rates":[
+        {
+          "Fullday": 3000
+        },
+        {
+          "Oneway": 1500
+        },
+        {
+          "Business": 2500
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "make": "BMW",
+      "driver": "Richard",
+      "rates": [
+        {
+          "Fullday": 200
+        },
+        {
+          "Oneway": 100
+        },
+        {
+          "Business": 150
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "make": "Mercedes",
+      "driver": "Joy",
+      "rates": [
+        {
+          "Fullday": 500
+        },
+        {
+          "Oneway": 200
+        },
+        {
+          "Business": 350
+        }
+      ]
+    }
+  ],
+  "addons" : [
+    {
+      "Coffee": 7.5,
+      "icon": "coffee.png"
+    },
+    {
+      "Water": 3.5,
+      "icon": "water.png"
+    }
+  ],
+  "distance": [
+    {
+      "from":1,
+      "to":499,
+      "price":5
+    },
+    {
+      "from":500,
+      "to":999,
+      "price":4
+    },
+    {
+      "from":1000,
+      "to":1499,
+      "price":3
+    },
+    {
+      "from":1500,
+      "to":1999,
+      "price":2
+    }
+  ]
+}
