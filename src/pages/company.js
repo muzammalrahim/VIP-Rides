@@ -34,7 +34,7 @@ class Company extends Component {
         </Element>
         <SocialSnippet/>
         <AboutSnippet/>
-        <Footer/>
+       
         <ContactBox/>
       </div>
     )

@@ -596,7 +596,21 @@ const BookFormSnippet = () => {
               </p>
               </div>
           </Col>
+   
+
         <div className="booking-form">
+        <div className="booking-form-main">
+        <header class="generalgroup">
+      <nav>
+        <ul className="bookings-tabs">
+          <li className=" title whenfocus selected "><a href="#"><p className="unskew1">Business Events</p></a></li>
+          <li className=" title1 whenfocus "><a href="#"><p className="unskew">Airport Transfers</p></a></li>
+          <li className={"title2 whenfocus " + (nextStep === 1 ? 'activeTab': 'hidden')}><a href="#"><p className="unskew">One Way Trip</p></a></li>
+          <li className="titlee whenfocus"><a href="#"><p className="unskew">Out of Town</p></a></li>
+        </ul>
+      </nav>
+    </header>
+      </div>
           {/* <form> */}
           <Fade bottom cascade>
             <div className="form-group-1">

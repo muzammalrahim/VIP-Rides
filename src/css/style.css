@@ -445,7 +445,7 @@ i.fa.fa-angle-right {
 background: #2b8289;
 	padding: 0px 25px 25px 25px;
 	border-radius: 6px;
-	width: 100%;
+	width: 101%;
 	display: inline-block;
 }
 .booking-form .form-group-2 {
@@ -1112,4 +1112,174 @@ label.checkbox_pointer{
 		width: 10rem!important;
 	}
 	
+}
+
+ /* taimoor */
+
+ .generalgroup:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.booking-form-main {
+	margin-bottom: 20px;
+}
+
+
+
+.bookings-tabs {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+nav li {
+	float: left;
+	position: relative;
+	background: #2b8289;
+	padding: 16px;
+}
+
+nav li a {
+	color: white;
+}
+
+nav li {
+	/* border-right: 1px solid #222222;; */
+	/* transform: skewx( */
+	/* -20deg */
+	/* ); */
+	transition: background 0.2s ease, color 0.2s ease;
+}
+
+
+/* .whenfocus:focus, */
+
+
+/* .whenfocus:hover { */
+
+
+/* background: #236a70; */
+
+
+/* } */
+
+
+/*  */
+
+.activeTab {
+	background: #236a70;
+	box-sizing: border-box;
+	border-radius: 1px;
+}
+
+.bookings-tabs li {
+	margin-right: 0px;
+}
+
+.title1 {
+	transform: skew(-20deg);
+	border-left: 4px solid #2c2c2c;
+	border-right: 4px solid #2c2c2c;
+}
+
+.title2 {
+	transform: skew(-20deg);
+}
+
+.title {
+	padding: 16px;
+	position: relative;
+	color: #FFF;
+	background: #2b8289;
+	border-radius: 4px;
+}
+
+.title:after {
+	content: " ";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 5px;
+	z-index: -1;
+	background: #2b8289;
+	margin-right: 2px solid black;
+	transform-origin: bottom left;
+	transform: skew(-20deg, 0deg);
+}
+
+.titlee {
+	padding: 16px;
+	position: relative;
+	color: #FFF;
+	background: #2b8289;
+	transform: skew(-20deg);
+	border-left: 4px solid #2c2c2c;
+}
+
+.titlee:after {
+	content: " ";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 31px;
+	z-index: -1;
+	background: #2b8289;
+	margin-right: 2px solid black;
+	transform-origin: bottom left;
+	transform: skew(20deg, 0deg);
+	border-radius: 4px;
+}
+
+.unskew{
+	transform: skew(20deg);
+	color: white !important;
+	font-size: unset !important;
+	margin-top: revert;
+}
+
+.unskew1{
+	transform: skew(0deg);
+	color: white !important;
+	font-size: unset !important;
+	margin-top: revert;
+}
+
+@media only screen and (max-width: 730px) {
+	.bookings-tabs {
+		display: grid;
+		grid-template-columns: auto;
+		row-gap: 10px;
+	}
+	nav li {
+		transform: unset !important;
+	}
+	.title:after {
+		transform: none !important;
+		left: 0px !important;
+	}
+	.title1 {
+		border-right: none;
+		border-left: none;
+	}
+	.title2 {
+		transform: unset;
+	}
+	.titlee {
+		border-left: none;
+		transform: unset;
+	}
+	.titlee:after {
+		left: 0px !important;
+		transform: none !important;
+	}
+	.unskew {
+		transform: skew(0deg);
+		color: white !important;
+		font-size: unset !important;
+	}
 }

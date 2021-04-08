@@ -15,7 +15,7 @@ class BookRide extends Component {
   constructor(){
     super();
     this.state={
-      password:'',
+      password:'password@bookride',
       visible: true,
       invalid:false
     }
