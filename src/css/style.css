@@ -1114,80 +1114,64 @@ label.checkbox_pointer{
 	
 }
 
- /* taimoor */
+ /*added by taimoor */
 
- .generalgroup:after {
+ .booking-form .generalgroup:after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
-.booking-form-main {
+.booking-form .booking-form-main {
 	margin-bottom: 20px;
 }
 
 
 
-.bookings-tabs {
+.booking-form .bookings-tabs {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 }
 
-nav li {
+.booking-form nav li {
 	float: left;
 	position: relative;
 	background: #2b8289;
 	padding: 16px;
 }
 
-nav li a {
+.booking-form nav li a {
 	color: white;
 }
 
-nav li {
-	/* border-right: 1px solid #222222;; */
-	/* transform: skewx( */
-	/* -20deg */
-	/* ); */
+.booking-form nav li {
+	
 	transition: background 0.2s ease, color 0.2s ease;
 }
 
 
-/* .whenfocus:focus, */
 
-
-/* .whenfocus:hover { */
-
-
-/* background: #236a70; */
-
-
-/* } */
-
-
-/*  */
-
-.activeTab {
+.booking-form .activeTab {
 	background: #236a70;
 	box-sizing: border-box;
 	border-radius: 1px;
 }
 
-.bookings-tabs li {
+.booking-form .bookings-tabs li {
 	margin-right: 0px;
 }
 
-.title1 {
+.booking-form .title1 {
 	transform: skew(-20deg);
 	border-left: 4px solid #2c2c2c;
 	border-right: 4px solid #2c2c2c;
 }
 
-.title2 {
+.booking-form .title2 {
 	transform: skew(-20deg);
 }
 
-.title {
+.booking-form .title {
 	padding: 16px;
 	position: relative;
 	color: #FFF;
@@ -1195,7 +1179,7 @@ nav li {
 	border-radius: 4px;
 }
 
-.title:after {
+.booking-form .title:after {
 	content: " ";
 	position: absolute;
 	display: block;
@@ -1210,7 +1194,7 @@ nav li {
 	transform: skew(-20deg, 0deg);
 }
 
-.titlee {
+.booking-form .titlee {
 	padding: 16px;
 	position: relative;
 	color: #FFF;
@@ -1219,7 +1203,7 @@ nav li {
 	border-left: 4px solid #2c2c2c;
 }
 
-.titlee:after {
+.booking-form .titlee:after {
 	content: " ";
 	position: absolute;
 	display: block;
@@ -1235,14 +1219,14 @@ nav li {
 	border-radius: 4px;
 }
 
-.unskew{
+.booking-form .unskew{
 	transform: skew(20deg);
 	color: white !important;
 	font-size: unset !important;
 	margin-top: revert;
 }
 
-.unskew1{
+.booking-form .unskew1{
 	transform: skew(0deg);
 	color: white !important;
 	font-size: unset !important;
@@ -1250,34 +1234,34 @@ nav li {
 }
 
 @media only screen and (max-width: 730px) {
-	.bookings-tabs {
+	.booking-form .bookings-tabs {
 		display: grid;
 		grid-template-columns: auto;
 		row-gap: 10px;
 	}
-	nav li {
+	.booking-form nav li {
 		transform: unset !important;
 	}
-	.title:after {
+	.booking-form .title:after {
 		transform: none !important;
 		left: 0px !important;
 	}
-	.title1 {
+	.booking-form .title1 {
 		border-right: none;
 		border-left: none;
 	}
-	.title2 {
+	.booking-form .title2 {
 		transform: unset;
 	}
-	.titlee {
+	.booking-form .titlee {
 		border-left: none;
 		transform: unset;
 	}
-	.titlee:after {
+	.booking-form .titlee:after {
 		left: 0px !important;
 		transform: none !important;
 	}
-	.unskew {
+	.booking-form .unskew {
 		transform: skew(0deg);
 		color: white !important;
 		font-size: unset !important;
