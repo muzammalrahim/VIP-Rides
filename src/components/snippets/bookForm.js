@@ -605,7 +605,7 @@ const BookFormSnippet = () => {
         <ul className="bookings-tabs">
           <li className=" title whenfocus selected "><a href onClick={(e) => {e.preventDefault()}}><p className="unskew1">Business Events</p></a></li>
           <li className=" title1 whenfocus "><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">Airport Transfers</p></a></li>
-          <li className={"title2 whenfocus " + (nextStep === 1 ? 'activeTab': 'hidden')}><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">One Way Trip</p></a></li>
+          <li className={"title2 whenfocus " + (nextStep === 1 || nextStep === 2 ? 'activeTab': 'hidden')}><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">One Way Trip</p></a></li>
           <li className="titlee whenfocus"><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">Out of Town</p></a></li>
         </ul>
       </nav>
