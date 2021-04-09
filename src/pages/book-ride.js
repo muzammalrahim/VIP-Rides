@@ -10,6 +10,8 @@ import BookServicesSnippet from "../components/snippets/bookServices";
 import "../css/style.css";
 import "../css/fontAwesome.css";
 import { Modal } from 'antd';
+import FaqsSnippet from "../components/snippets/faqs";
+import SocialSnippet from "../components/snippets/social";
 
 class BookRide extends Component {
   constructor(){
@@ -45,7 +47,7 @@ class BookRide extends Component {
   render() {
       return (
         <>
-        <div>
+        <div className="vip-bookform">
           <SEO title="Book a Ride"/>
           <Navbar/>
             <Element name="scroll-to-element" className="element">
@@ -53,6 +55,8 @@ class BookRide extends Component {
             </Element>
             <BookFormSnippet/>
             <BookServicesSnippet/>
+            <FaqsSnippet/>
+            <SocialSnippet/>
             <Footer/>
           <ContactBox/>
         </div>
