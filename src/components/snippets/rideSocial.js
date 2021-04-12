@@ -15,18 +15,18 @@ const RideSocialSnippet = () => (
 				</div>
 			</div>
 		</section>
-		<section className="about-snippet">
+		{/*<section className="about-snippet">
 			<Row>
 				<Col className="snippet-content sec_section">
 					<Col xs={24} className="checklist-container sec_heading_st">
-						{/* <Fade left> */}
+						 <Fade left>
 							
 						<h1>visit our<br />social platforms</h1>
 						
 						<span>dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
 									<br/> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
 								</span>
-						{/* </Fade> */}
+						 </Fade>
 					</Col>
 					<Col xs={24} className="media_icons">
 						<Col xs={24} md={12}>
@@ -44,7 +44,7 @@ const RideSocialSnippet = () => (
 					</Col>
 				</Col>
 			</Row>
-		</section>
+		</section>*/}
 	</>
 )
 

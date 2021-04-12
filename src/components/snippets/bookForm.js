@@ -591,7 +591,7 @@ const BookFormSnippet = () => {
               <div style={{color:'white'}}><h1><em>BOOK YOUR</em><em className="sec_hd">RIDE</em></h1>
               <p>
                 <img src={dot} alt="" style={{maxWidth: '16px'}} /> 
-                Search Your Car 
+                Fell Like a VIP
                 <img src={dot} alt="" style={{maxWidth: '16px'}} />
               </p>
               </div>
@@ -603,10 +603,10 @@ const BookFormSnippet = () => {
         <header class="generalgroup">
       <nav>
         <ul className="bookings-tabs">
-          <li className=" title whenfocus selected "><a ><p className="unskew1">Business Events</p></a></li>
-          <li className=" title1 whenfocus "><a href="#"><p className="unskew">Airport Transfers</p></a></li>
-          <li className={"title2 whenfocus " + (nextStep === 1 ? 'activeTab': 'hidden')}><a href="#"><p className="unskew">One Way Trip</p></a></li>
-          <li className="titlee whenfocus"><a href="#"><p className="unskew">Out of Town</p></a></li>
+          <li className=" title whenfocus selected "><a href onClick={(e) => {e.preventDefault()}}><p className="unskew1">Business Events</p></a></li>
+          <li className=" title1 whenfocus "><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">Airport Transfers</p></a></li>
+          <li className={"title2 whenfocus " + (nextStep === 1 || nextStep === 2 ? 'activeTab': 'hidden')}><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">One Way Trip</p></a></li>
+          <li className="titlee whenfocus"><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">Out of Town</p></a></li>
         </ul>
       </nav>
     </header>
