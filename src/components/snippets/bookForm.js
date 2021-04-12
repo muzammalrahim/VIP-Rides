@@ -603,14 +603,15 @@ const BookFormSnippet = () => {
         <header class="generalgroup">
       <nav>
         <ul className="bookings-tabs">
-          <li className=" title whenfocus selected "><a href onClick={(e) => {e.preventDefault()}}><p className="unskew1">Business Events</p></a></li>
-          <li className=" title1 whenfocus "><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">Airport Transfers</p></a></li>
-          <li className={"title2 whenfocus " + (nextStep === 1 || nextStep === 2 ? 'activeTab': 'hidden')}><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">One Way Trip</p></a></li>
+          <li className={" title whenfocus " + (nextStep === 0 || nextStep === 1 || nextStep === 2 ? 'activeTab': 'hidden')}><a href onClick={(e) => {e.preventDefault()}}><p className="unskew1">One Way Trip </p></a></li>
+          <li className=" title1 whenfocus"><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">Airport Transfers</p></a></li>
+          <li className="title2 whenfocus " ><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">Business Events</p></a></li>
           <li className="titlee whenfocus"><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">Out of Town</p></a></li>
         </ul>
       </nav>
     </header>
       </div>
+
           {/* <form> */}
           <Fade bottom cascade>
             <div className="form-group-1">
@@ -626,7 +627,7 @@ const BookFormSnippet = () => {
                     /> Back
                 </div>
               </div></Col>}
-              {nextStep === 1 ? <>
+              {nextStep === 1 ? <div>
                 <Row gutter={16}>
                   <Col md={12}>
                     <div className="form-group" style={{textAlign:'left'}}>
@@ -716,9 +717,9 @@ const BookFormSnippet = () => {
                  <div>{addons}</div> 
                 </div>
               </div>
-              </> 
+              </div>
               : nextStep === 2 ?
-              <>
+              <div>
                 <div className="form-group" style={{marginTop:'2vw'}}>
                   {cartValues()}
                   <Row gutter={16}>
@@ -778,7 +779,7 @@ const BookFormSnippet = () => {
                     </Col>
                   </Row>
                 </div>
-              </> : <div className="done_message">
+                </div> : <div className="done_message">
                       Your Booking has been Received
                     </div>}
             </div>
