@@ -597,8 +597,7 @@ const BookFormSnippet = () => {
                 <img src={dot} alt="" style={{maxWidth: '16px'}} />
               </p>
               </div>
-
-              
+      
           </Col>
 
           <p style={{color:"white"}}><em> FORM UNDER CONSTRUCTION ...</em></p>
