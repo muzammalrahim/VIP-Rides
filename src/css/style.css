@@ -1196,10 +1196,29 @@ label.checkbox_pointer{
 
 
 .booking-form .activeTab {
-	background: #236a70;
+	 background: #236a70 !important;
 	box-sizing: border-box;
 	border-radius: 1px;
 }
+.booking-form .activeTab:after {
+	content: " ";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 5px;
+	z-index: -1;
+	/* background: #2b8289; */
+	background: #236a70 !important;
+	margin-right: 2px solid black;
+	transform-origin: bottom left;
+	transform: skew(-20deg, 0deg);
+	transition-duration: 0.5ms;
+	
+}
+
+
 
 .booking-form .bookings-tabs li {
 	margin-right: 0px;
@@ -1221,6 +1240,9 @@ label.checkbox_pointer{
 	color: #FFF;
 	background: #2b8289;
 	border-radius: 4px;
+	transition-property: all;
+    transition-timing-function: ease-in-out;
+	transition-duration: 0.2ms;
 }
 
 .booking-form .title:after {
@@ -1232,11 +1254,21 @@ label.checkbox_pointer{
 	top: 0;
 	left: 5px;
 	z-index: -1;
-	background: #2b8289;
+	 background: #2b8289; 
 	margin-right: 2px solid black;
 	transform-origin: bottom left;
 	transform: skew(-20deg, 0deg);
+	transition-duration: 0.5ms;
+	
 }
+.booking-form .whenfocus:focus,
+.booking-form .whenfocus:hover {
+	 background: #236a70 ;
+	 box-sizing: border-box; 
+	 border-radius: 1px  ;
+}
+
+
 
 .booking-form .titlee {
 	padding: 16px;
@@ -1245,6 +1277,7 @@ label.checkbox_pointer{
 	background: #2b8289;
 	transform: skew(-20deg);
 	border-left: 4px solid #2c2c2c;
+	transition-duration: 0.2ms;
 }
 
 .booking-form .titlee:after {
@@ -1261,7 +1294,15 @@ label.checkbox_pointer{
 	transform-origin: bottom left;
 	transform: skew(20deg, 0deg);
 	border-radius: 4px;
+	transition-duration: 0.5ms;
 }
+
+.booking-form .titlee:hover:after,.booking-form .titlee:focus:after{
+	background: #236a70 !important;
+}
+
+
+
 
 .booking-form .unskew{
 	transform: skew(20deg);
@@ -1311,3 +1352,4 @@ label.checkbox_pointer{
 		font-size: unset !important;
 	}
 }
+
