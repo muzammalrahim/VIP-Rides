@@ -61,6 +61,7 @@
     width: 199px;
     margin: auto;
     padding: 15px;
+    display: inline;
 }
 
 .services-snippet .premium-button:hover {
