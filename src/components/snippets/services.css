@@ -49,6 +49,25 @@
     font-weight: bold;
 }
 
+.services-snippet .premium-button {
+    background-image: -webkit-linear-gradient(30deg, #0a0a0a 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #0a0a0a 50%, transparent 50%);
+    border: none;
+    color: #0a0a0a;
+    font-size: .7rem;
+    letter-spacing: .1rem;
+    text-align: center;
+    background-color: #31e1eb;
+    width: 199px;
+    margin: auto;
+    padding: 15px;
+}
+
+.services-snippet .premium-button:hover {
+    background-position: 0%;
+    color: #fff;
+}
+
 .services-snippet ul.services {
     display: -webkit-flex;
     display: flex;

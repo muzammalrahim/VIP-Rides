@@ -46,6 +46,8 @@ const BookFormSnippet = () => {
   const [personalInfo, setPersonalInfo] = useState({first_name:'', last_name:'', email:'', phone:''});
   const [cartValue, setCartValue] = useState({trip: 0, addon: 0});
 
+  const [form_under_construction,setform_under_construction] = useState(true)
+ 
   useEffect(() => {
     const carRateInitial = json_data.cars[0].rates.map( (rate, index) =>{
       let rateKey = Object.keys(rate);
@@ -591,26 +593,29 @@ const BookFormSnippet = () => {
               <div style={{color:'white'}}><h1><em>BOOK YOUR</em><em className="sec_hd">RIDE</em></h1>
               <p>
                 <img src={dot} alt="" style={{maxWidth: '16px'}} /> 
-                Search Your Car 
+                Fell Like a VIP
                 <img src={dot} alt="" style={{maxWidth: '16px'}} />
               </p>
               </div>
-          </Col>
-   
 
-        <div className="booking-form">
+              
+          </Col>
+
+          <p style={{color:"white"}}><em> FORM UNDER CONSTRUCTION ...</em></p>
+          {!form_under_construction &&   <div className="booking-form">
         <div className="booking-form-main">
         <header class="generalgroup">
       <nav>
         <ul className="bookings-tabs">
-          <li className=" title whenfocus selected "><a href="#"><p className="unskew1">Business Events</p></a></li>
-          <li className=" title1 whenfocus "><a href="#"><p className="unskew">Airport Transfers</p></a></li>
-          <li className={"title2 whenfocus " + (nextStep === 1 ? 'activeTab': 'hidden')}><a href="#"><p className="unskew">One Way Trip</p></a></li>
-          <li className="titlee whenfocus"><a href="#"><p className="unskew">Out of Town</p></a></li>
+          <li className={" title whenfocus " + (nextStep === 0 || nextStep === 1 || nextStep === 2 ? 'activeTab': 'hidden')}><a href onClick={(e) => {e.preventDefault()}}><p className="unskew1">One Way Trip </p></a></li>
+          <li className=" title1 whenfocus"><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">Airport Transfers</p></a></li>
+          <li className="title2 whenfocus " ><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">Business Events</p></a></li>
+          <li className="titlee whenfocus"><a href onClick={(e) => {e.preventDefault()}}><p className="unskew">Out of Town</p></a></li>
         </ul>
       </nav>
     </header>
       </div>
+
           {/* <form> */}
           <Fade bottom cascade>
             <div className="form-group-1">
@@ -626,7 +631,7 @@ const BookFormSnippet = () => {
                     /> Back
                 </div>
               </div></Col>}
-              {nextStep === 1 ? <>
+              {nextStep === 1 ? <div>
                 <Row gutter={16}>
                   <Col md={12}>
                     <div className="form-group" style={{textAlign:'left'}}>
@@ -716,9 +721,9 @@ const BookFormSnippet = () => {
                  <div>{addons}</div> 
                 </div>
               </div>
-              </> 
+              </div>
               : nextStep === 2 ?
-              <>
+              <div>
                 <div className="form-group" style={{marginTop:'2vw'}}>
                   {cartValues()}
                   <Row gutter={16}>
@@ -778,7 +783,7 @@ const BookFormSnippet = () => {
                     </Col>
                   </Row>
                 </div>
-              </> : <div className="done_message">
+                </div> : <div className="done_message">
                       Your Booking has been Received
                     </div>}
             </div>
@@ -791,8 +796,18 @@ const BookFormSnippet = () => {
             </div>
             </Fade>
           {/* </form> */}
-        </div>
+        </div> }
+
+       
       </Row>
+
+   
+    
+    
+          
+     
+  
+
     </div>
       </section>
   )
