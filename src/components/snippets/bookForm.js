@@ -46,6 +46,8 @@ const BookFormSnippet = () => {
   const [personalInfo, setPersonalInfo] = useState({first_name:'', last_name:'', email:'', phone:''});
   const [cartValue, setCartValue] = useState({trip: 0, addon: 0});
 
+  const [form_under_construction,setform_under_construction] = useState(true)
+ 
   useEffect(() => {
     const carRateInitial = json_data.cars[0].rates.map( (rate, index) =>{
       let rateKey = Object.keys(rate);
@@ -595,10 +597,11 @@ const BookFormSnippet = () => {
                 <img src={dot} alt="" style={{maxWidth: '16px'}} />
               </p>
               </div>
+      
           </Col>
-   
 
-        <div className="booking-form">
+          <p style={{color:"white"}}><em> FORM UNDER CONSTRUCTION ...</em></p>
+          {!form_under_construction &&   <div className="booking-form">
         <div className="booking-form-main">
         <header class="generalgroup">
       <nav>
@@ -792,8 +795,18 @@ const BookFormSnippet = () => {
             </div>
             </Fade>
           {/* </form> */}
-        </div>
+        </div> }
+
+       
       </Row>
+
+   
+    
+    
+          
+     
+  
+
     </div>
       </section>
   )

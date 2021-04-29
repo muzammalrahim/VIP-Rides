@@ -1244,6 +1244,11 @@ label.checkbox_pointer{
     transition-timing-function: ease-in-out;
 	transition-duration: 0.2ms;
 }
+.booking-form .construction{background: #2b8289 !important;
+    padding: 0px 25px 25px 25px !important;
+    border-radius: 6px;
+    width: 100%;
+    display: inline-block;}
 
 .booking-form .title:after {
 	content: " ";
